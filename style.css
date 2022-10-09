@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: "poppins";
+    
+}
+#banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assets/bannerfix.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.banner-content h1{
+    color: white;
+    font-weight: 700;
+    font-size: 55px;
+    text-shadow: 0 0 5px #f0ed49, 0 0 10px #0000FF;
+} 
+
+.banner-content p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.banner-content span{
+    color: #f0ed49;
+    font-weight: 700;
+    font-size: 55px;
+    
+    text-shadow: 0 0 5px #000000, 0 0 10px #fafafa;
+}
+
+/* LIST FILM */
+
+#listFilm{
+    
+    background-image: linear-gradient(to right, #531010 , rgb(14, 14, 13));
+}
+
+.title-section{
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 40px;
+    
+text-shadow: 0 0 5px #f0ed49, 0 0 10px #0000FF;
+}
+
+.card-img-top{
+    height: 250px;
+}
+.card{
+    transition: 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+/* sinopsis */
+#sinopsis{
+     background-image: linear-gradient(to left, #531010 , rgb(14, 14, 13)) ;
+}
+
+
+.card-sinopsis img{
+    width: 100%;
+    border-radius: 16px;
+    transition: 0.3s ease-in-out;
+    border: 5px solid #fff;
+}
+.card-sinopsis img:hover{
+    transform: scale(0.9);
+}
+
+.sinopsis-text{
+    padding: 16px;
+}
+
+.sinopsis-text h1{
+    font-weight: 800;
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    
+text-shadow: 0 0 5px #f0ed49, 0 0 10px #0000FF;
+}
+
+.sinopsis-text p{
+    color: white;
+    font-weight: 400;
+    
+}
+
+
+@media only screen and (max-width:600px){
+
+    #listFilm{
+        text-align: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+    .card:hover{
+        transform: scale(0.9);
+        
+    }
+
+    #sinopsis{
+        text-align: center;
+    }
+
+    .card-sinopsis img{
+        width: 80%;
+    }
+}
